@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <h1 className="font-serif text-2xl font-bold text-brand-accent tracking-wider">SeaSalt Café</h1>
+            <span className="font-serif text-2xl font-bold text-brand-accent tracking-wider">SeaSalt Café</span>
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#menu" className="text-brand-text hover:text-brand-accent transition-colors font-medium">Menu</a>
@@ -71,9 +71,10 @@ const Hero = () => {
           <div className="w-64 h-64 md:w-96 md:h-96 mx-auto mb-12 rounded-full overflow-hidden border-8 border-brand-accent/20 shadow-[0_0_40px_rgba(212,175,55,0.15)] relative transform hover:scale-105 transition-transform duration-700">
             <img src="hero_bowl.png" alt="Healthy Organic Bowl" className="w-full h-full object-cover" />
           </div>
-          <h2 className="font-serif text-5xl md:text-7xl font-bold text-brand-accent mb-6 leading-tight">
-            Fresh. Healthy. <span className="italic font-light">Organic.</span>
-          </h2>
+          <h1 className="font-serif text-5xl md:text-7xl font-bold text-brand-accent mb-6 leading-tight">
+            <span className="sr-only">SeaSalt Café in Kozhikode: </span>
+            Fresh. Healthy. <span className="italic font-light text-white">Organic.</span>
+          </h1>
           <p className="text-xl md:text-2xl text-brand-text mb-12 font-light max-w-2xl mx-auto opacity-80">
             Nourishing Kozhikode with nature's finest ingredients, served with love on Beach Road.
           </p>
@@ -119,7 +120,7 @@ const BestSellers = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <h3 className="font-serif text-4xl text-brand-accent mb-4">Our Best Sellers</h3>
+          <h2 className="font-serif text-4xl text-brand-accent mb-4">Our Best Sellers</h2>
           <div className="w-24 h-1 bg-brand-accent/30 mx-auto"></div>
         </motion.div>
 
@@ -141,7 +142,7 @@ const BestSellers = () => {
               </div>
               <div className="p-8 lg:p-10">
                 <div className="flex justify-between items-start mb-4">
-                  <h4 className="font-serif text-3xl font-bold text-brand-accent">{item.name}</h4>
+                  <h3 className="font-serif text-3xl font-bold text-brand-accent">{item.name}</h3>
                   <span className="text-2xl font-medium text-brand-text/90">{item.price}</span>
                 </div>
                 <p className="text-lg text-brand-text/70 font-light leading-relaxed">{item.desc}</p>
@@ -188,7 +189,7 @@ const InteractiveMenu = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h3 className="font-serif text-4xl text-brand-accent mb-4">Explore Our Menu</h3>
+          <h2 className="font-serif text-4xl text-brand-accent mb-4">Explore Our Menu</h2>
           <div className="w-24 h-1 bg-brand-accent/30 mx-auto mb-12"></div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-16">
@@ -220,7 +221,7 @@ const InteractiveMenu = () => {
               {menuData[activeTab].map((item, index) => (
                 <div key={index} className="border-b border-brand-accent/10 pb-6 last:border-0 md:last:border-b md:nth-last-child(-n+2):border-0">
                   <div className="flex justify-between items-baseline mb-3">
-                    <h4 className="font-serif text-2xl font-bold text-brand-accent">{item.name}</h4>
+                    <h3 className="font-serif text-2xl font-bold text-brand-accent">{item.name}</h3>
                     <span className="text-xl font-semibold text-brand-text/80">{item.price}</span>
                   </div>
                   <p className="text-brand-text/60 font-light text-lg">{item.desc}</p>
@@ -246,7 +247,7 @@ const StoryValues = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="font-serif text-5xl md:text-6xl mb-8 leading-tight font-bold">A little corner of <span className="italic font-light">Kozhikode</span></h3>
+            <h2 className="font-serif text-5xl md:text-6xl mb-8 leading-tight font-bold">A little corner of <span className="italic font-light">Kozhikode</span></h2>
             <p className="text-xl font-medium mb-8 opacity-90 leading-relaxed">
               Born from a passion for mindful eating and a love for our coastal town, SeaSalt Café is your sanctuary on Beach Road. We believe that food should not only taste incredible but also nourish the soul and respect the earth.
             </p>
@@ -266,7 +267,7 @@ const StoryValues = () => {
               <div className="w-20 h-20 mx-auto bg-brand-bg text-brand-accent rounded-full flex items-center justify-center mb-8 shadow-inner">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
               </div>
-              <h4 className="font-serif text-3xl font-bold mb-4">Locally Organic</h4>
+              <h3 className="font-serif text-3xl font-bold mb-4">Locally Organic</h3>
               <p className="text-lg font-medium opacity-80 leading-relaxed">Sourced directly from farmers within a 50km radius of Kozhikode.</p>
             </motion.div>
 
@@ -280,7 +281,7 @@ const StoryValues = () => {
               <div className="w-20 h-20 mx-auto bg-brand-bg text-brand-accent rounded-full flex items-center justify-center mb-8 shadow-inner">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></svg>
               </div>
-              <h4 className="font-serif text-3xl font-bold mb-4">Plant-Powered</h4>
+              <h3 className="font-serif text-3xl font-bold mb-4">Plant-Powered</h3>
               <p className="text-lg font-medium opacity-80 leading-relaxed">100% vegetarian menu with abundant vegan and gluten-free options.</p>
             </motion.div>
           </div>
@@ -301,7 +302,7 @@ const ContactLocation = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <h3 className="font-serif text-4xl md:text-5xl text-brand-accent mb-6">Visit Us</h3>
+          <h2 className="font-serif text-4xl md:text-5xl text-brand-accent mb-6">Visit Us</h2>
           <div className="w-24 h-1 bg-brand-accent/30 mx-auto"></div>
         </motion.div>
 
@@ -313,7 +314,7 @@ const ContactLocation = () => {
           className="grid lg:grid-cols-2 gap-0 bg-brand-bg rounded-[2.5rem] overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-brand-accent/10"
         >
           <div className="p-10 md:p-16 lg:p-20 flex flex-col justify-center">
-            <h4 className="font-serif text-3xl md:text-4xl font-bold text-brand-accent mb-10">Get in Touch</h4>
+            <h3 className="font-serif text-3xl md:text-4xl font-bold text-brand-accent mb-10">Get in Touch</h3>
 
             <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Message sent!'); }}>
               <div>
@@ -335,11 +336,11 @@ const ContactLocation = () => {
 
             <div className="mt-16 pt-10 border-t border-brand-accent/10 grid grid-cols-2 gap-8">
               <div>
-                <h5 className="font-bold text-brand-accent text-lg mb-3">Location</h5>
+                <h4 className="font-bold text-brand-accent text-lg mb-3">Location</h4>
                 <p className="text-brand-text/70 leading-relaxed">Beach Road,<br />Kozhikode, Kerala 673032</p>
               </div>
               <div>
-                <h5 className="font-bold text-brand-accent text-lg mb-3">Hours</h5>
+                <h4 className="font-bold text-brand-accent text-lg mb-3">Hours</h4>
                 <p className="text-brand-text/70 leading-relaxed">Mon-Sun: 8am - 10pm</p>
               </div>
             </div>
@@ -368,7 +369,7 @@ const Footer = () => {
     <footer className="bg-brand-bg text-brand-text py-16 border-t border-brand-accent/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
         <div className="mb-8 md:mb-0 text-center md:text-left">
-          <h2 className="font-serif text-3xl font-bold tracking-wider mb-3 text-brand-accent">SeaSalt Café</h2>
+          <div className="font-serif text-3xl font-bold tracking-wider mb-3 text-brand-accent">SeaSalt Café</div>
           <p className="text-brand-text/60 text-base">© {new Date().getFullYear()} SeaSalt Café. All rights reserved.</p>
         </div>
         <div className="flex space-x-8">
